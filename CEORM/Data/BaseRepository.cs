@@ -17,7 +17,7 @@ public class BaseRepository<T> : IBaseRepository<T>
     {
         Type t = entity.GetType();
 
-        var prop = t.GetProperty("ID");
+        var prop = t.GetProperty("Id");
 
         if (prop == null)
             throw new NullReferenceException("ID is null");
